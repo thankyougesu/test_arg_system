@@ -6,7 +6,8 @@ function search() {
   } else if (key === "clock") {
     window.location.href = "answer_β.html";
   } else {
-    window.location.href = "nosearch");
+    window.location.href = "nosearch.html");
   }
 }
+
 
