@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>株式会社Deus｜都市再生と資産価値の創造</title>
+<meta name="description" content="株式会社Deusは都市再生・高級分譲開発・資産運用コンサルティングを行う不動産会社です。">
+
+<style>
+body {
+  margin: 0;
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  margin-top: 5px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* 検索フォーム */
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.search-box button {
+  padding: 6px 10px;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+}
+
+.search-box button:hover {
+  background-color: #666;
+}
+
+.hero {
+  background: linear-gradient(to right, #1e2a38, #2c3e50);
+  color: white;
+  padding: 80px 10%;
+}
+
+.section {
+  padding: 60px 10%;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  border-left: 4px solid #2c3e50;
+  padding-left: 10px;
+}
+
+footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>株式会社Deus</h1>
+    <nav>
+      <a href="#">ホーム</a>
+      <a href="#">会社概要</a>
+      <a href="#">事業紹介</a>
+      <a href="#">採用情報</a>
+      <a href="#">お問い合わせ</a>
+    </nav>
+  </div>
+
+<form class="search-box" onsubmit="search(); return false;">
+  <input type="text" id="keyword" placeholder="物件コードを入力">
+  <button type="submit">検索</button>
+</form>
+</header>
+
+<section class="hero">
+  <h2>選ばれし土地に、新たな価値を。</h2>
+  <p>
+    都市の記憶を未来へと継承する。  
+    私たちは本質的な資産価値を追求し続けます。
+  </p>
+</section>
+
+<section class="section">
+  <h3>企業理念</h3>
+  <p>
+    当社独自の内部解析システム「RABBIT」により物件情報を管理しています。
+  </p>
+  <p>
+    一部情報は社内機密区分「CLOCK」にて管理されています。
+  </p>
+</section>
+
+<footer>
+  © 2025 株式会社Deus All Rights Reserved.
+</footer>
+
+<!-- 🔎 search.js 読み込み -->
+<script src="js/search.js"></script>
+
+</body>
+</html>
