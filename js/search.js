@@ -6,6 +6,7 @@ function search() {
   } else if (key === "clock") {
     window.location.href = "answer_β.html";
   } else {
-    alert("該当する情報は見つかりませんでした。");
+    window.location.href = "nosearch");
   }
 }
+
