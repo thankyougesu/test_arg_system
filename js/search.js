@@ -16,7 +16,7 @@ function search() {
     "都市開発事業部": "dailyblog01.html",
     "社内ブログ": "dailyblog02.html",
     "情報システム部": "securityannounce.html",
-    "\\Deus-Network\08_project": "localfolder.html",
+    "\\\\deus-network\\08_project": "localfolder.html",
     "新山さん": "chat02.html",
   };
 
