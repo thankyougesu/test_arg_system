@@ -12,6 +12,7 @@ body {
   font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
   background-color: #f4f6f8;
   color: #333;
+  line-height: 1.8;
 }
 
 header {
@@ -19,17 +20,15 @@ header {
   color: #fff;
   padding: 20px 10%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
 header h1 {
   margin: 0;
   font-size: 24px;
-}
-
-nav {
-  margin-top: 5px;
+  letter-spacing: 1px;
 }
 
 nav a {
@@ -69,32 +68,94 @@ nav a:hover {
   background-color: #666;
 }
 
+
+/* ヒーロー */
 .hero {
-  background: linear-gradient(to right, #1e2a38, #2c3e50);
-  color: white;
-  padding: 80px 10%;
+  background-image: 
+    linear-gradient(rgba(184, 182, 182, 0.6), rgba(199, 199, 199, 0.6)),
+    url("images/building.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: rgb(0, 0, 0);
+  padding: 120px 10%;
 }
 
-.section {
-  padding: 60px 10%;
-  background-color: #fff;
+.hero h2 {
+  font-size: 40px;
   margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* 経営理念セクション（強調） */
+.philosophy {
+  background-color: #1e2a38;
+  color: white;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.philosophy h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.philosophy p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
+
+.philosophy strong {
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+/* 通常セクション */
+.section {
+  padding: 40px 10%;
+  background-color: #fff;
 }
 
 .section h3 {
-  border-left: 4px solid #2c3e50;
-  padding-left: 10px;
+  font-size: 24px;
+  border-left: 5px solid #2c3e50;
+  padding-left: 15px;
+  margin-bottom: 5px;
 }
 
+.section h4 {
+  margin-top: 1px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* フッター */
 footer {
   background-color: #111;
   color: #aaa;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   font-size: 12px;
+  line-height: 1.6;
+}
+
+.section a {
+  color: #2c3e50;
+  text-decoration: underline;
+}
+
+.section a:hover {
+  opacity: 0.7;
 }
 </style>
-
 </head>
 
 <body>
@@ -103,19 +164,21 @@ footer {
   <div>
     <h1>株式会社Deus</h1>
     <nav>
-      <a href="#">ホーム</a>
-      <a href="#">会社概要</a>
-      <a href="#">事業紹介</a>
-      <a href="#">採用情報</a>
-      <a href="#">お問い合わせ</a>
+      <a href="index.html">ホーム</a>
+      <a href="company.html">会社概要</a>
+      <a href="service.html">事業紹介</a>
+      <a href="recruit.html">採用情報</a>
     </nav>
   </div>
 
-<form class="search-box" onsubmit="search(); return false;">
-  <input type="text" id="keyword" placeholder="物件コードを入力">
-  <button type="submit">検索</button>
-</form>
+  <!-- 🔎 検索フォーム -->
+  <form class="search-box" onsubmit="search(); return false;">
+    <input type="text" id="keyword" placeholder="検索ワードを入力">
+    <button type="submit">検索</button>
+  </form>
 </header>
+
+
 
 <section class="hero">
   <h2>選ばれし土地に、新たな価値を。</h2>
@@ -125,21 +188,49 @@ footer {
   </p>
 </section>
 
-<section class="section">
-  <h3>企業理念</h3>
+<!-- ★ 経営理念を独立強調 -->
+<section class="philosophy">
+  <h3>経営理念</h3>
+  <p><strong>「目に見えぬ価値を、設計する。」</strong></p>
   <p>
-    当社独自の内部解析システム「RABBIT」により物件情報を管理しています。
+    私たちの仕事は、目に見える範囲に留まってはいけない。
+  </p>
+    <p>
+    例えば、記憶。例えば、時間。例えば、未来。
+  </p>
+  <p>それぞれが、未来へと繋がっていく掛け替えのないものです。</p>
+</section>
+
+<section class="section">
+  <h3>街から作り上げる『未来』へ。</h3>
+  <p>
+    街と人々との共存を掲げ、
+    都市開発の新たな未来を創出します。
   </p>
   <p>
-    一部情報は社内機密区分「CLOCK」にて管理されています。
+    株式会社Deusが作り上げるもの、それは目には見えません。
+    しかし、確実にそこに存在します。
+    それは地域のコミュニティであり、
+    人々の過ごす柔らかな時間です。
+  </p>
+  <p>
+    さあ、ともに街から未来を、作り上げていきましょう。
+  </p>
+</section>
+
+<section class="section">
+  <h4>お知らせ</h4>
+  <a href="information.html"</a>
+<p>
+    当社への悪質なニュースに対する声明について
   </p>
 </section>
 
 <footer>
-  © 2025 株式会社Deus All Rights Reserved.
+  © 2026 下種のカラクリ All Rights Reserved.<br>
+  このサイトはフィクションです。実在の企業・団体・とは一切関係ありません。
 </footer>
 
-<!-- 🔎 search.js 読み込み -->
 <script src="js/search.js"></script>
 
 </body>

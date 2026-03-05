@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>採用情報｜株式会社Deus</title>
+<meta name="description" content="株式会社Deusの採用情報ページ。新卒・中途採用、募集要項、選考プロセスをご案内します。">
+
+<style>
+body {
+  margin: 0;
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  margin-top: 5px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.search-box button {
+  padding: 6px 10px;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+}
+
+.search-box button:hover {
+  background-color: #666;
+}
+
+.section {
+  padding: 60px 10%;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  border-left: 4px solid #2c3e50;
+  padding-left: 10px;
+}
+
+.section h4 {
+  margin-top: 30px;
+  color: #2c3e50;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+}
+
+table th {
+  background-color: #f0f2f5;
+  text-align: left;
+}
+
+footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>株式会社Deus</h1>
+    <nav>
+      <a href="index.html">ホーム</a>
+      <a href="company.html">会社概要</a>
+      <a href="service.html">事業紹介</a>
+      <a href="recruit.html">採用情報</a>
+    </nav>
+  </div>
+
+  <!-- 🔎 検索フォーム -->
+  <form class="search-box" onsubmit="search(); return false;">
+    <input type="text" id="keyword" placeholder="検索ワードを入力">
+    <button type="submit">検索</button>
+  </form>
+</header>
+
+<section class="section">
+  <h3>メッセージ</h3>
+  <p>
+    株式会社Deusは、都市の未来を再構築する仲間を求めています。<br>
+    既存の枠にとらわれない視点、そして長期的な思考を持つ人材を歓迎します。
+  </p>
+</section>
+
+<section class="section">
+  <h3>募集職種</h3>
+
+  <h4>総合職（開発・企画）</h4>
+  <table>
+    <tr>
+      <th>業務内容</th>
+      <td>都市開発プロジェクトの企画立案・調査・実行管理<br>または既存物件の賃貸管理業務</td>
+    </tr>
+    <tr>
+      <th>応募資格</th>
+      <td>四年制大学卒業以上（学部不問）</td>
+    </tr>
+    <tr>
+      <th>勤務地</th>
+      <td>東京都内本社（非公開フロア含む）</td>
+    </tr>
+  </table>
+
+  <h4>資産運用コンサルタント</h4>
+  <table>
+    <tr>
+      <th>業務内容</th>
+      <td>富裕層顧客への不動産投資提案</td>
+    </tr>
+    <tr>
+      <th>応募資格</th>
+      <td>不動産業界経験者優遇</td>
+    </tr>
+    <tr>
+      <th>勤務地</th>
+      <td>東京・大阪</td>
+    </tr>
+  </table>
+</section>
+
+<section class="section">
+  <h3>選考プロセス</h3>
+  <ol>
+    <li>エントリー</li>
+    <li>書類選考</li>
+    <li>一次面接</li>
+    <li>最終面接</li>
+    <li>内定</li>
+  </ol>
+
+</section>
+
+<section class="section">
+  <h3>内部育成制度</h3>
+  <p>
+    社内研修制度を通じ、
+    中長期視点での都市分析能力を育成します。
+  </p>
+  <p>
+    一部部署に配属された方には特別研修を行うことがあります。<br>対象者には都度アナウンスを行います。
+  </p>
+</section>
+
+<footer>
+  © 2026 下種のカラクリ All Rights Reserved.<br>
+  このサイトはフィクションです。実在の企業・団体・とは一切関係ありません。
+</footer>
+
+<script src="js/search.js"></script>
+
+</body>
+</html>

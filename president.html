@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>代表インタビュー｜株式会社Deus</title>
+<meta name="description" content="株式会社Deus 代表取締役社長インタビュー">
+
+<style>
+body {
+  margin: 0;
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  margin-top: 5px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.search-box button {
+  padding: 6px 10px;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+}
+
+.search-box button:hover {
+  background-color: #666;
+}
+
+.section {
+  padding: 60px 10%;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  border-left: 4px solid #2c3e50;
+  padding-left: 10px;
+}
+
+.president-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.president-image img {
+  width: 300px;
+  border-radius: 6px;
+}
+
+.president-profile {
+  max-width: 600px;
+}
+
+footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>株式会社Deus</h1>
+    <nav>
+      <a href="index.html">ホーム</a>
+      <a href="company.html">会社概要</a>
+      <a href="service.html">事業紹介</a>
+      <a href="recruit.html">採用情報</a>
+    </nav>
+  </div>
+
+  <!-- 🔎 検索フォーム -->
+  <form class="search-box" onsubmit="search(); return false;">
+    <input type="text" id="keyword" placeholder="検索ワードを入力">
+    <button type="submit">検索</button>
+  </form>
+</header>
+
+<section class="section">
+  <h3>代表取締役社長 あいさつ</h3>
+
+  <div class="president-container">
+    <div class="president-image">
+      <img src="images/president.png" alt="代表取締役社長">
+    </div>
+
+    <div class="president-profile">
+      <h4>代表取締役社長　神代 恒一（かみしろ こういち）</h4>
+      <p>
+        私たちDeusは、「都市の構造を再定義する」ことを使命としています。
+        表面に見える街並みの奥には、常に過去と未来の交差点があります。
+      </p>
+
+      <p>
+        私が大切にしているのは「持続し続けるための視点」です。
+        短期的な利益ではなく、構造そのものを変える視点。
+        それが我々の強みです。
+      </p>
+
+      <p>
+        これは我々自身にも当てはまることです。当社を「持続し続けるための視点」。<br>
+        それは社員教育でもあり、人材雇用でもある。
+        当社は特に<b>新入社員</b>
+        の雇用を業界内でも最重要視しています。
+      </p>
+
+      <p>
+        目に見えるものだけが、大切とは限りません。
+        むしろ目に見えないところにこそ、「価値」と「本質」が宿ると考えています。
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h3>社長来歴</h3>
+  <p>
+    2012年　都立明日原高校卒業　東京大学文科二類合格<br>
+    2014年　ハーバード大学　経済学部留学<br>
+    2018年　東京大学文科二類卒業
+    2019年　株式会社Deus創業　現在に至る
+   
+  </p>
+
+</section>
+
+<footer>
+  © 2025 下種のカラクリ All Rights Reserved.<br>
+  このサイトはフィクションです。実在の企業・団体・とは一切関係ありません。
+</footer>
+
+<script src="js/search.js"></script>
+
+</body>
+</html>

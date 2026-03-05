@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>株式会社Deus｜都市再生と資産価値の創造</title>
+<meta name="description" content="株式会社Deusは都市再生・高級分譲開発・資産運用コンサルティングを行う不動産会社です。">
+
+<style>
+body {
+  margin: 0;
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #000000;
+  color: #c16d00;
+}
+
+header {
+  background-color: #2b0006;
+  color: #ffffff;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  margin-top: 5px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* 検索フォーム */
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.search-box button {
+  padding: 6px 10px;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+}
+
+.search-box button:hover {
+  background-color: #666;
+}
+
+.hero {
+  background-color: #000000;
+  color: #c16d00;
+  padding: 10px 10%;
+}
+
+.section {
+  padding: 60px 10%;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.section h3 {
+  border-left: 4px solid #000000;
+  padding-left: 10px;
+}
+
+footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>株式会社Deus</h1>
+    <nav>
+     <a href="index.html">ホーム</a>
+      <a href="company.html">会社概要</a>
+      <a href="service.html">事業紹介</a>
+      <a href="recruit.html">採用情報</a>
+    </nav>
+  </div>
+
+<!-- 🔎 検索フォーム -->
+  <form class="search-box" onsubmit="search(); return false;">
+    <input type="text" id="keyword" placeholder="検索ワードを入力">
+    <button type="submit">検索</button>
+  </form>
+</header>
+
+<section class="hero">
+  <h2>【重要】情報管理体制の徹底について（再周知）</h2>
+  <p>各位</p>
+  <p>情報システム部より、情報管理体制に関する重要なお願いです。</p>
+  <p>最近、ローカルフォルダ内に保存されている重要書類において、<b>パスワード未設定のまま保管されているケース</b>
+    が複数確認されました。</p>
+  <p>当社では顧客情報、契約情報、財務関連資料など、極めて機微性の高い情報を日常的に取り扱っています。
+    万一の情報漏えいは、会社の信用失墜だけでなく、法的責任や重大な損害賠償にも直結します。</p>
+</section>
+
+<section class="hero">
+  <h2>■ 重要書類へのパスワード設定の徹底</h2>
+  <p>ローカルフォルダに保存する重要書類には、<b>必ずパスワードを設定してください。</b></p>
+  <p>対象は、顧客情報、契約書、見積書、個人情報を含む資料、経営関連資料等です。</p>
+</section>
+
+<section class="hero">
+  <h2>■ パスワード設定時の禁止事項</h2>
+  <p>以下のような安易な設定は絶対に行わないでください。</p>
+  <p><b>・初期ID（社員ID）をそのまま使用する</b></p>
+  <p><b>・誕生日など推測されやすい情報を使用する</b></p>
+  <p>上記を踏まえ、パスワードは、英大文字・英小文字・数字・記号を組み合わせた十分に複雑なものを設定してください。</p>
+</section>
+
+<section class="hero">
+  <h2>■ 情報を扱う責任の自覚</h2>
+  <p>私たちは単に資料を扱っているのではなく、
+お客様からお預かりした大切な情報を取り扱っている立場にあります。</p>
+  <p>一人ひとりの意識の低下が、会社全体のリスクにつながります。
+「自分だけは大丈夫」という考えは通用しません。。</p>
+<p>重要な顧客情報を扱う社員であるという自覚を持ち、
+日々の業務において情報管理を最優先事項として徹底してください。</p>
+<p>今後も定期的に監査・確認を実施いたします。
+改善が見られない場合は、社内規程に基づき対応いたします。</p>
+<p>全社員の皆様のご理解とご協力をお願いいたします。</p>
+
+<p>情報システム部</p>
+
+</section>
+
+<footer>
+  © 2026 下種のカラクリ All Rights Reserved.<br>
+  このサイトはフィクションです。実在の企業・団体・とは一切関係ありません。
+</footer>
+
+<!-- 🔎 search.js 読み込み -->
+<script src="js/search.js"></script>
+
+</body>
+</html>
+

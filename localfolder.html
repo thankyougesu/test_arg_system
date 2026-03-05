@@ -2,7 +2,6 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>株式会社Deus｜都市再生と資産価値の創造</title>
 <meta name="description" content="株式会社Deusは都市再生・高級分譲開発・資産運用コンサルティングを行う不動産会社です。">
 
@@ -10,13 +9,13 @@
 body {
   margin: 0;
   font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
-  background-color: #f4f6f8;
-  color: #333;
+  background-color: #000000;
+  color: #c16d00;
 }
 
 header {
-  background-color: #111;
-  color: #fff;
+  background-color: #2b0006;
+  color: #ffffff;
   padding: 20px 10%;
   display: flex;
   justify-content: space-between;
@@ -26,6 +25,10 @@ header {
 header h1 {
   margin: 0;
   font-size: 24px;
+}
+
+.container {
+  padding: 60px 10%;
 }
 
 nav {
@@ -41,6 +44,31 @@ nav a {
 
 nav a:hover {
   color: #fff;
+}
+
+.folder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.folder {
+  text-align: center;
+  cursor: pointer;
+}
+
+.folder img {
+  width: 80px;
+  opacity: 0.85;
+}
+
+.folder:hover img {
+  opacity: 1;
+}
+
+.folder-name {
+  margin-top: 10px;
+  font-size: 14px;
 }
 
 /* 検索フォーム */
@@ -69,21 +97,15 @@ nav a:hover {
   background-color: #666;
 }
 
-.hero {
-  background: linear-gradient(to right, #1e2a38, #2c3e50);
-  color: white;
-  padding: 80px 10%;
-}
-
-.section {
-  padding: 60px 10%;
-  background-color: #fff;
-  margin-bottom: 20px;
-}
-
 .section h3 {
-  border-left: 4px solid #2c3e50;
+  border-left: 4px solid #000000;
   padding-left: 10px;
+}
+
+.hero {
+  background-color: #000000;
+  color: #c16d00;
+  padding: 10px 10%;
 }
 
 footer {
@@ -95,6 +117,7 @@ footer {
 }
 </style>
 
+<script src="js/auth.js"></script>
 </head>
 
 <body>
@@ -118,17 +141,34 @@ footer {
 </header>
 
 <section class="hero">
-  <h2>お探しのファイルは見つかりませんでした。</h2>
-
+  <h2>新規事業部用共有フォルダ</h2>
 </section>
 
+<div class="container">
+  <div class="folder-grid">
+
+    <div class="folder deleted" onclick="openDeleted()">
+      <img src="images/folder.png">
+      <div class="folder-name"> 新山</div>
+    </div>
+
+    <div class="folder" onclick="openFolder('hayashibara_local.html')">
+      <img src="images/folder.png">
+      <div class="folder-name">林原</div>
+    </div>
+
+  </div>
+</div>
 
 <footer>
-  © 2025 株式会社Deus All Rights Reserved.
+  © 2026 下種のカラクリ All Rights Reserved.<br>
+  このサイトはフィクションです。実在の企業・団体・とは一切関係ありません。
 </footer>
 
 <!-- 🔎 search.js 読み込み -->
 <script src="js/search.js"></script>
 
 </body>
+
+
 </html>
