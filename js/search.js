@@ -1,3 +1,12 @@
+console.log("SEARCH.JS LOADED");
+
+function normalizeText(str) {
+  return str
+    .trim()
+    .toLowerCase()
+    .normalize("NFKC");
+}
+
 async function search() {
   const input = document.getElementById("keyword").value;
   const key = normalizeText(input);
@@ -7,7 +16,7 @@ async function search() {
   try {
 
     const response = await fetch(
-      "https://deus-search.thankyougesu.workers.dev?q=" +
+      "https://deus-search.thankyougesu.workers.dev/?q=" +
       encodeURIComponent(key)
     );
 
