@@ -1,28 +1,30 @@
-function search() {
-  const key = document.getElementById("keyword").value
+function normalizeText(str) {
+  return str
     .trim()
-    .toLowerCase();
+    .toLowerCase()
+    .normalize("NFKC");
+}
 
-  const routes = {
-    "rabbit": "answer_α.html",
-    "clock": "answer_β.html",
-    "神代恒一": "president.html",
-    "新入社員": "newcommer.html",
-    "若村颯太": "2040801.html",
-    "西村かなえ": "2040802.html",
-    "林原健斗": "2040803.html",
-    "児童買春": "chat01.html",
-    "新規事業部": "newsection.html",
-    "都市開発事業部": "dailyblog01.html",
-    "社内ブログ": "dailyblog02.html",
-    "情報システム部": "securityannounce.html",
-    "\\\\deus-network\\08_project": "localfolder.html",
-    "新山さん": "chat02.html",
-  };
+async function search() {
+  const input = document.getElementById("keyword").value;
+  const key = normalizeText(input);
 
-  if (routes[key]) {
-    window.location.href = routes[key];
-  } else {
+  try {
+
+    const response = await fetch(
+      "https://deus-search.thankyougesu.workers.dev?q=" +
+      encodeURIComponent(key)
+    );
+
+    const data = await response.json();
+
+    window.location.href = data.page;
+
+  } catch (error) {
+
+    console.error(error);
+
     window.location.href = "nosearch.html";
+
   }
 }

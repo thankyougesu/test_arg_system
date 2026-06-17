@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>株式会社Deus｜都市再生と資産価値の創造</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #000000;
+  color: #c16d00;
+}
+
+header {
+  background-color: #2b0006;
+  color: #ffffff;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* ===== 検索 ===== */
+.search-box {
+  display: flex;
+}
+
+.search-box input {
+  padding: 5px;
+}
+
+.search-box button {
+  padding: 6px 10px;
+  background-color: #444;
+  color: white;
+  border: none;
+}
+
+.title {
+  padding: 10px 10%;
+}
+
+/* ===== データベース風UI ===== */
+.database {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #c16d00;
+  background-color: #050505;
+}
+
+.db-header {
+  background-color: #1a0004;
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #c16d00;
+}
+
+.db-row {
+  display: flex;
+  border-bottom: 1px solid #222;
+}
+
+.db-label {
+  width: 30%;
+  padding: 10px;
+  background-color: #111;
+  border-right: 1px solid #333;
+}
+
+.db-value {
+  width: 70%;
+  padding: 10px;
+}
+
+.db-row:hover {
+  background-color: #111;
+}
+
+/* 2列用 */
+.db-row.double {
+  display: flex;
+}
+
+.db-item {
+  width: 50%;
+  display: flex;
+  border-right: 1px solid #333;
+}
+
+.db-item:last-child {
+  border-right: none;
+}
+
+.db-item .db-label {
+  width: 40%;
+  padding: 10px;
+  background-color: #111;
+  border-right: 1px solid #333;
+}
+
+.db-item .db-value {
+  width: 60%;
+  padding: 10px;
+}
+
+
+footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>株式会社Deus</h1>
+    <nav>
+      <a href="index.html">ホーム</a>
+      <a href="company.html">会社概要</a>
+      <a href="service.html">事業紹介</a>
+      <a href="recruit.html">採用情報</a>
+    </nav>
+  </div>
+
+  <form class="search-box" onsubmit="search(); return false;">
+    <input type="text" id="keyword" placeholder="検索ワードを入力">
+    <button type="submit">検索</button>
+  </form>
+</header>
+
+<section class="title">
+  <h2>調査報告書：水島早紀</h2>
+  <p>社内関係者からの内部通報により、水島早紀（本名：壬生みさき）が大手調査会社である、アース調査会社より派遣されたエージェントである疑いが浮上したため、当該人物に関する内部調査を実施した。</p>
+  <p>調査の結果、通報内容については概ね事実であることを確認した。</p>
+  <p>以下、本件に関する調査結果を記載する。</p>
+  <p>なお、依頼元とされる調査会社に対しては、上層部主導のもと特別対応を実施予定である。</p>
+  <p>また、対象人物については、新規事業部におけるサポート要員として暫定的にアサインされる予定となっている。</p>
+  <p>本資料に記載された内容は社外秘情報に該当し、関係者以外への開示・口外を固く禁ずる。</p>
+</section>
+
+<!-- ===== データベース本体 ===== -->
+<div class="database">
+
+  <div class="db-header">■ 基本情報</div>
+
+  <div class="db-row">
+    <div class="db-label">氏名</div>
+    <div class="db-value">壬生みさき</div>
+  </div>
+
+  <div class="db-row">
+    <div class="db-label">生年月日</div>
+    <div class="db-value">2000/04/29</div>
+  </div>
+
+  <div class="db-row">
+    <div class="db-label">年齢</div>
+    <div class="db-value">26</div>
+  </div>
+
+  <div class="db-header">■ 身体データ</div>
+
+  <div class="db-row">
+    <div class="db-label">身長</div>
+    <div class="db-value">167 cm</div>
+  </div>
+
+  <div class="db-row">
+    <div class="db-label">体重</div>
+    <div class="db-value">61 kg</div>
+  </div>
+
+  <div class="db-row">
+    <div class="db-label">スリーサイズ</div>
+    <div class="db-value">89 / 62 / 83</div>
+  </div>
+
+  <div class="db-header">■ 経歴調査</div>
+
+  <div class="db-row">
+    <div class="db-label">経歴概要</div>
+    <div class="db-value">関東圏の私立大学にて心理学および行動分析を専攻。
+在学中より複数の民間調査機関にインターンとして参加し、情報収集・聞き込み・潜入調査技術を習得したとされる。<br>
+特に“対象へ自然に接近し、短期間で信頼関係を構築する能力”に優れていたとの評価記録が残されており、社内での評価は高い模様。<br>
+複数企業への長期潜入調査任務に従事した経験があり、本件においては不正会計に関する調査要員として接触していたものと予想される。</div>
+  </div>
+
+  <div class="db-row">
+    <div class="db-label">性経験調査</div>
+    <div class="db-value">交際経験があったのは、大学時代の恋人の一人のみ。現在も交際は継続中であり、将来的な結婚を見据えている。<br>
+    性生活については一般的であり、アブノーマルな性経験は少ない。新規事業における適正は現在調査中。</div>
+  </div>
+
+  <div class="db-header">■ 経験データ</div>
+
+<div class="db-row double">
+   <div class="db-item">
+    <div class="db-label">絶頂経験</div>
+    <div class="db-value">29</div>
+  </div>
+  <div class="db-item">
+    <div class="db-label">精飲経験</div>
+    <div class="db-value">2</div>
+  </div>
+</div>
+
+
+<div class="db-row double">
+  <div class="db-item">
+    <div class="db-label">膣性交経験</div>
+    <div class="db-value">25</div>
+  </div>
+  <div class="db-item">
+    <div class="db-label">膣内射精経験</div>
+    <div class="db-value">0</div>
+  </div>
+</div>
+
+<div class="db-row double">
+  <div class="db-item">
+    <div class="db-label">肛門性交経験</div>
+    <div class="db-value">0</div>
+  </div>
+  <div class="db-item">
+    <div class="db-label">肛内射精経験</div>
+    <div class="db-value">0</div>
+  </div>
+</div>
+
+<div class="db-row double">
+  <div class="db-item">
+    <div class="db-label">レズ経験</div>
+    <div class="db-value">0</div>
+  </div>
+  <div class="db-item">
+    <div class="db-label">SM経験</div>
+    <div class="db-value">0</div>
+  </div>
+</div>
+
+</div>
+
+
+<footer>
+  © 2026 下種のカラクリ All Rights Reserved.<br>
+  このサイトはフィクションです。実在の企業・団体・とは一切関係ありません。
+</footer>
+
+<script src="js/search.js"></script>
+
+</body>
+</html>

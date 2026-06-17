@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>株式会社Deus｜都市再生と資産価値の創造</title>
+<meta name="description" content="株式会社Deusは都市再生・高級分譲開発・資産運用コンサルティングを行う不動産会社です。">
+
+<style>
+body {
+  margin: 0;
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #000000;
+  color: #c16d00;
+}
+
+header {
+  background-color: #2b0006;
+  color: #ffffff;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  margin-top: 5px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* 検索フォーム */
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.search-box button {
+  padding: 6px 10px;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+}
+
+.search-box button:hover {
+  background-color: #666;
+}
+
+.hero {
+  background-color: #000000;
+  color: #c16d00;
+  padding: 10px 10%;
+}
+
+.title {
+  background-color: #000000;
+  color: #c16d00;
+  font-size: 18px;
+  padding: 10px 10%;
+  margin-bottom: 0%;
+}
+
+.section {
+  padding: 60px 10%;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.subheading {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-left: 3px solid #c16d00;
+  font-weight: bold;
+}
+
+.section h3 {
+  border-left: 4px solid #000000;
+  padding-left: 10px;
+}
+
+footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>株式会社Deus</h1>
+    <nav>
+     <a href="index.html">ホーム</a>
+      <a href="company.html">会社概要</a>
+      <a href="service.html">事業紹介</a>
+      <a href="recruit.html">採用情報</a>
+    </nav>
+  </div>
+
+<!-- 🔎 検索フォーム -->
+  <form class="search-box" onsubmit="search(); return false;">
+    <input type="text" id="keyword" placeholder="検索ワードを入力">
+    <button type="submit">検索</button>
+  </form>
+</header>
+
+<section class="title">
+  <h2>シジル魔術理論概説</h2>
+
+</section>
+
+<section class="hero">
+  <h2>■ シジル魔術について</h2>
+  <p>シジル魔術とは、開闢案件を通じて魔界側より齎された、
+人類でも運用可能な魔術技術体系を指す。</p>
+  <p>当該技術は『快楽の書』を起源としており、
+現在一般社会へ流通している近代魔術理論の基盤にもなっている。</p>
+  <p>ただし、一般に知られているシジル魔術は、オースティン・オスマン・スペア
+本人によって意図的な改変・欠落・偽装が施されたものであり、
+本来の効力を発揮しない。</p>
+  <p>本資料は、魔界側に保存されていた原典を基に再構築された“真正シジル理論”についての資料である。</p>
+</section>
+
+<section class="hero">
+  <h2>■ シジルについて</h2>
+  <p>シジルとは、特定概念・欲求・存在情報を圧縮した特殊印章である。</p>
+  <p>現代魔術においては単なる象徴記号として扱われているが、
+真正理論では、シジルは形而上領域へ干渉するための“鍵”として機能する。</p>
+  <p>刻印内部へ高位魔族の『真名』を埋め込むことで、
+対応する魔族権能の一部を現実世界へ引き出すことが可能となる。</p>
+  <p>シジルは印章の大きさによって効力を増し、明日原高校の福音発生装置に用いられるようなものは『大シジル』として扱われる。</p>
+</section>
+
+<section class="hero">
+  <h2>■ 権能発動について</h2>
+  <p>シジルによって発現する作用は多岐に渡る。</p>
+  <p>主な確認例として、以下現象が挙げられる。</p>
+  <p>・精神誘導</p>
+  <p>・欲求増幅</p>
+  <p>・認識阻害</p>
+  <p>・依存形成</p>
+  <p>・快楽反応増強</p>
+  <p>これらは既存科学体系では観測不能であり、
+形而上領域に存在する非観測性作用によって発現しているものと考えられている。</p>  
+</section>
+
+<footer>
+  © 2026 下種のカラクリ All Rights Reserved.<br>
+  このサイトはフィクションです。実在の企業・団体・とは一切関係ありません。
+</footer>
+
+<!-- 🔎 search.js 読み込み -->
+<script src="js/search.js"></script>
+
+</body>
+</html>
+

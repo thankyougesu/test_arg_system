@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>株式会社Deus｜都市再生と資産価値の創造</title>
+<meta name="description" content="株式会社Deusは都市再生・高級分譲開発・資産運用コンサルティングを行う不動産会社です。">
+
+<style>
+body {
+  margin: 0;
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #000000;
+  color: #c16d00;
+}
+
+header {
+  background-color: #2b0006;
+  color: #ffffff;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  margin-top: 5px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.title {
+  padding: 10px 10%;
+}
+
+.table-container {
+  width: 85%;
+  margin: 20px auto;
+  border: 1px solid #c16d00;
+  background-color: #050505;
+}
+
+.table-header {
+  background-color: #1a0004;
+  padding: 10px;
+  border-bottom: 1px solid #c16d00;
+  font-weight: bold;
+}
+
+.table-row {
+  display: flex;
+  border-bottom: 1px solid #222;
+}
+
+.table-cell {
+  padding: 10px;
+  border-right: 1px solid #333;
+  font-size: 14px;
+}
+
+.table-cell:last-child {
+  border-right: none;
+}
+
+.header-row {
+  background-color: #111;
+  font-weight: bold;
+}
+
+/* 列幅 */
+.col-id { width: 10%; }
+.col-name { width: 20%; }
+.col-type { width: 20%; }
+.col-project { width: 20%; }
+.col-area { width: 20%; }
+.col-status { width: 10%; }
+
+/* hover */
+.table-row:hover {
+  background-color: #111;
+}
+
+.alert {
+  color: #ff4444;
+}
+
+footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>株式会社Deus</h1>
+    <nav>
+      <a href="index.html">ホーム</a>
+      <a href="company.html">会社概要</a>
+      <a href="service.html">事業紹介</a>
+      <a href="recruit.html">採用情報</a>
+    </nav>
+  </div>
+
+  <form class="search-box" onsubmit="search(); return false;">
+    <input type="text" id="keyword" placeholder="検索ワードを入力">
+    <button type="submit">検索</button>
+  </form>
+</header>
+
+<section class="title">
+  <h2>施工リスト：支倉工務店</h2>
+  <p>社内共有用／外部閲覧禁止</p>
+</section>
+
+<div class="table-container">
+
+  <div class="table-header">■ 登録顧客一覧</div>
+
+  <!-- ヘッダー -->
+  <div class="table-row header-row">
+    <div class="table-cell col-id">ID</div>
+    <div class="table-cell col-name">顧客名</div>
+    <div class="table-cell col-type">所在地</div>
+    <div class="table-cell col-project">施工内容</div>
+    <div class="table-cell col-area">施工面積</div>  
+    <div class="table-cell col-status">ステータス</div>
+  </div>
+
+  <!-- 行 -->
+  <div class="table-row">
+    <div class="table-cell col-id">001</div>
+    <div class="table-cell col-name">株式会社Deus</div>
+    <div class="table-cell col-type">千代田区</div>
+    <div class="table-cell col-project">ビル内部設備管理</div>
+    <div class="table-cell col-area">2500平米</div>  
+    <div class="table-cell col-status">継続契約中</div>
+  </div>
+
+  <div class="table-row">
+    <div class="table-cell col-id">002</div>
+    <div class="table-cell col-name">豊橋ホールディングス</div>
+    <div class="table-cell col-type">新宿区</div>
+    <div class="table-cell col-project">電気設備更新</div>
+    <div class="table-cell col-area">2700平米</div> 
+    <div class="table-cell col-status">施工完了</div>
+  </div>
+
+  <div class="table-row">
+    <div class="table-cell col-id">003</div>
+    <div class="table-cell col-name">個人顧客（匿名）</div>
+    <div class="table-cell col-type">新宿区</div>
+    <div class="table-cell col-project">防音室設置</div>
+    <div class="table-cell col-area">50平米</div> 
+    <div class="table-cell col-status">施工完了</div>
+  </div>
+
+  <div class="table-row">
+    <div class="table-cell col-id">004</div>
+    <div class="table-cell col-name">西松カトリック協会</div>
+    <div class="table-cell col-type">中野区</div>
+    <div class="table-cell col-project">電気設備更新</div>
+    <div class="table-cell col-area">300平米</div> 
+    <div class="table-cell col-status">施工完了</div>
+  </div>
+
+  <div class="table-row">
+    <div class="table-cell col-id">005</div>
+    <div class="table-cell col-name">吉村屋・新宿ガード下店</div>
+    <div class="table-cell col-type">新宿区</div>
+    <div class="table-cell col-project">調理設備導入</div>
+    <div class="table-cell col-area">500平米</div> 
+    <div class="table-cell col-status">施工完了</div>
+  </div>
+
+  <div class="table-row">
+    <div class="table-cell col-id">006</div>
+    <div class="table-cell col-name">私立幕下高校</div>
+    <div class="table-cell col-type">台東区</div>
+    <div class="table-cell col-project">校舎新築工事</div>
+    <div class="table-cell col-area">800平米</div> 
+    <div class="table-cell col-status">施工完了</div>
+  </div>
+
+  <div class="table-row">
+    <div class="table-cell col-id">007</div>
+    <div class="table-cell col-name">株式会社TryGame</div>
+    <div class="table-cell col-type">新宿区</div>
+    <div class="table-cell col-project">社員寮新築工事</div>
+    <div class="table-cell col-area">1000平米</div> 
+    <div class="table-cell col-status">施工完了</div>
+  </div>
+
+    <div class="table-row">
+    <div class="table-cell col-id">008</div>
+    <div class="table-cell col-name">私立明日原高校</div>
+    <div class="table-cell col-type">杉並区</div>
+    <div class="table-cell col-project">学生寮新築工事</div>
+    <div class="table-cell col-area">1900平米</div> 
+    <div class="table-cell col-status">施工完了</div>
+  </div>
+
+    <div class="table-row">
+    <div class="table-cell col-id">009</div>
+    <div class="table-cell col-name">高原ビルディング</div>
+    <div class="table-cell col-type">千代田区</div>
+    <div class="table-cell col-project">エレベーター更新</div>
+    <div class="table-cell col-area">500平米</div> 
+    <div class="table-cell col-status">施工完了</div>
+  </div>
+
+    <div class="table-row">
+    <div class="table-cell col-id">010</div>
+    <div class="table-cell col-name">杉並区くらしのハウス</div>
+    <div class="table-cell col-type">杉並区</div>
+    <div class="table-cell col-project">バリアフリー改修</div>
+    <div class="table-cell col-area">300平米</div> 
+    <div class="table-cell col-status">施工完了</div>
+  </div>
+
+    <div class="table-row">
+    <div class="table-cell col-id">011</div>
+    <div class="table-cell col-name">オールレッド株式会社</div>
+    <div class="table-cell col-type">台東区</div>
+    <div class="table-cell col-project">社員寮新築工事</div>
+    <div class="table-cell col-area">2000平米</div>    
+    <div class="table-cell col-status">継続契約中</div>
+  </div>
+
+    <div class="table-row">
+    <div class="table-cell col-id">012</div>
+    <div class="table-cell col-name">カラオケおたふく猫　下高井戸店</div>
+    <div class="table-cell col-type">杉並区</div>
+    <div class="table-cell col-project">電気設備更新</div>
+    <div class="table-cell col-area">800平米</div> 
+    <div class="table-cell col-status">施工完了</div>
+  </div>
+
+    <div class="table-row">
+    <div class="table-cell col-id">013</div>
+    <div class="table-cell col-name">下倉物流</div>
+    <div class="table-cell col-type">千代田区</div>
+    <div class="table-cell col-project">倉庫改修工事</div>
+    <div class="table-cell col-area">2400平米</div> 
+    <div class="table-cell col-status">施工完了</div>
+  </div>
+
+    <div class="table-row">
+    <div class="table-cell col-id">014</div>
+    <div class="table-cell col-name">都立霧ヶ峰高校</div>
+    <div class="table-cell col-type">港区</div>
+    <div class="table-cell col-project">バリアフリー改修</div>
+    <div class="table-cell col-area">600平米</div> 
+    <div class="table-cell col-status">施工完了</div>
+  </div> 
+
+    <div class="table-row">
+    <div class="table-cell col-id">015</div>
+    <div class="table-cell col-name">港区ゆめみホール</div>
+    <div class="table-cell col-type">港区</div>
+    <div class="table-cell col-project">音響設備設置</div>
+    <div class="table-cell col-area">1200平米</div> 
+    <div class="table-cell col-status">施工完了</div>
+  </div> 
+
+    <div class="table-row">
+    <div class="table-cell col-id">016</div>
+    <div class="table-cell col-name">みらいの光カトリック教会</div>
+    <div class="table-cell col-type">千代田区</div>
+    <div class="table-cell col-project">音響設備設置</div>
+    <div class="table-cell col-area">1200平米</div> 
+    <div class="table-cell col-status">施工完了</div>
+  </div> 
+
+    <div class="table-row">
+    <div class="table-cell col-id">017</div>
+    <div class="table-cell col-name">私立光成学園</div>
+    <div class="table-cell col-type">足立区</div>
+    <div class="table-cell col-project">学生寮新築工事</div>
+    <div class="table-cell col-area">800平米</div> 
+    <div class="table-cell col-status">施工完了</div>
+  </div> 
+
+    <div class="table-row">
+    <div class="table-cell col-id">018</div>
+    <div class="table-cell col-name">西進ハイスクール　お茶の水</div>
+    <div class="table-cell col-type">千代田区</div>
+    <div class="table-cell col-project">防音室設置工事</div>
+    <div class="table-cell col-area">100平米</div> 
+    <div class="table-cell col-status">施工完了</div>
+  </div> 
+
+    <div class="table-row">
+    <div class="table-cell col-id">019</div>
+    <div class="table-cell col-name">カラオケおたふく猫　新宿西口店</div>
+    <div class="table-cell col-type">新宿区</div>
+    <div class="table-cell col-project">音響設備設置</div>
+    <div class="table-cell col-area">600平米</div> 
+    <div class="table-cell col-status">施工完了</div>
+  </div> 
+
+    <div class="table-row">
+    <div class="table-cell col-id">020</div>
+    <div class="table-cell col-name">あざみ公会堂</div>
+    <div class="table-cell col-type">杉並区</div>
+    <div class="table-cell col-project">地下ホール建設</div>
+    <div class="table-cell col-area">2000平米</div> 
+    <div class="table-cell col-status">施工完了</div>
+  </div> 
+
+
+</div>
+
+<footer>
+  © 2026 下種のカラクリ All Rights Reserved.<br>
+  このサイトはフィクションです。実在の企業・団体・人物とは一切関係ありません。
+</footer>
+
+<script src="js/search.js"></script>
+
+</body>
+</html>

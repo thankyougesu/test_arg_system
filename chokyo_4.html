@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>株式会社Deus｜都市再生と資産価値の創造</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #000000;
+  color: #c16d00;
+}
+
+header {
+  background-color: #2b0006;
+  color: #ffffff;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* ===== 検索 ===== */
+.search-box {
+  display: flex;
+}
+
+.search-box input {
+  padding: 5px;
+}
+
+.search-box button {
+  padding: 6px 10px;
+  background-color: #444;
+  color: white;
+  border: none;
+}
+
+.title {
+  padding: 10px 10%;
+}
+
+/* ===== データベース風UI ===== */
+.database {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #c16d00;
+  background-color: #050505;
+}
+
+.db-header {
+  background-color: #1a0004;
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #c16d00;
+}
+
+.db-row {
+  display: flex;
+  border-bottom: 1px solid #222;
+}
+
+.db-label {
+  width: 30%;
+  padding: 10px;
+  background-color: #111;
+  border-right: 1px solid #333;
+}
+
+.db-value {
+  width: 70%;
+  padding: 10px;
+}
+
+.db-row:hover {
+  background-color: #111;
+}
+
+/* 2列用 */
+.db-row.double {
+  display: flex;
+}
+
+.db-item {
+  width: 50%;
+  display: flex;
+  border-right: 1px solid #333;
+}
+
+.db-item:last-child {
+  border-right: none;
+}
+
+.db-item .db-label {
+  width: 40%;
+  padding: 10px;
+  background-color: #111;
+  border-right: 1px solid #333;
+}
+
+.db-item .db-value {
+  width: 60%;
+  padding: 10px;
+}
+
+
+footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>株式会社Deus</h1>
+    <nav>
+      <a href="index.html">ホーム</a>
+      <a href="company.html">会社概要</a>
+      <a href="service.html">事業紹介</a>
+      <a href="recruit.html">採用情報</a>
+    </nav>
+  </div>
+
+  <form class="search-box" onsubmit="search(); return false;">
+    <input type="text" id="keyword" placeholder="検索ワードを入力">
+    <button type="submit">検索</button>
+  </form>
+</header>
+
+<section class="title">
+  <h2>調律報告書：壬生みさき</h2>
+  <p>ある調査会社から派遣されてきたエージェント。弊社への情報工作中を捕縛し、現在特別調律を実施中。</p>
+  <p>派遣元となっている調査会社に対しては、特殊対応を行っており、現在進行中。</p>
+  <p>調律開始から一週間が経過しているが、経過は良好。シジル及び福音への適正も高い。</p>
+  <p>恋人関係となる男性がおり、その男性の視線を意識させた際の快楽受容値が高いことが判明している。</p>
+  <p>以降は上位キャストも交えての経過観察を行う予定。</p>
+</section>
+
+<!-- ===== データベース本体 ===== -->
+<div class="database">
+
+  <div class="db-header">■ 基本情報</div>
+
+  <div class="db-row">
+    <div class="db-label">氏名</div>
+    <div class="db-value">壬生みさき</div>
+  </div>
+
+  <div class="db-row">
+    <div class="db-label">現在の所属</div>
+    <div class="db-value">未所属</div>
+  </div>
+
+  <div class="db-header">■ 身体データ</div>
+
+  <div class="db-row">
+    <div class="db-label">身長</div>
+    <div class="db-value">167 cm</div>
+  </div>
+
+  <div class="db-row">
+    <div class="db-label">体重</div>
+    <div class="db-value">61 kg</div>
+  </div>
+
+  <div class="db-row">
+    <div class="db-label">スリーサイズ</div>
+    <div class="db-value">89 / 62 / 83</div>
+  </div>
+
+  <div class="db-header">■ 調律経歴</div>
+
+  <div class="db-row">
+    <div class="db-label">調律期間</div>
+    <div class="db-value">一週間</div>
+  </div>
+
+  <div class="db-row">
+    <div class="db-label">適性</div>
+    <div class="db-value">性奉仕／羞恥性癖</div>
+  </div>
+
+  <div class="db-header">■ 調律後経験データ</div>
+
+<div class="db-row double">
+   <div class="db-item">
+    <div class="db-label">絶頂経験</div>
+    <div class="db-value">102</div>
+  </div>
+  <div class="db-item">
+    <div class="db-label">精飲経験</div>
+    <div class="db-value">48</div>
+  </div>
+</div>
+
+
+<div class="db-row double">
+  <div class="db-item">
+    <div class="db-label">膣性交経験</div>
+    <div class="db-value">180</div>
+  </div>
+  <div class="db-item">
+    <div class="db-label">膣内射精経験</div>
+    <div class="db-value">60</div>
+  </div>
+</div>
+
+<div class="db-row double">
+  <div class="db-item">
+    <div class="db-label">肛門性交経験</div>
+    <div class="db-value">90</div>
+  </div>
+  <div class="db-item">
+    <div class="db-label">肛内射精経験</div>
+    <div class="db-value">40</div>
+  </div>
+</div>
+
+<div class="db-row double">
+  <div class="db-item">
+    <div class="db-label">レズ経験</div>
+    <div class="db-value">80</div>
+  </div>
+  <div class="db-item">
+    <div class="db-label">SM経験</div>
+    <div class="db-value">40</div>
+  </div>
+</div>
+
+</div>
+
+
+<footer>
+  © 2026 下種のカラクリ All Rights Reserved.<br>
+  このサイトはフィクションです。実在の企業・団体・とは一切関係ありません。
+</footer>
+
+<script src="js/search.js"></script>
+
+</body>
+</html>
