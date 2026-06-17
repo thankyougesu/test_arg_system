@@ -26,11 +26,14 @@ async function search() {
 
     console.log("Worker応答 =", data);
 
-    window.location.href = data.page;
+    console.log("遷移先 =", data.page);
+    alert("遷移先 = " + data.page);
 
   } catch (error) {
 
     console.error("FETCH ERROR", error);
+
+    alert(error);
 
     window.location.href = "nosearch.html";
 
