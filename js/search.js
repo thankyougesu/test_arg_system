@@ -26,8 +26,7 @@ async function search() {
 
     console.log("Worker応答 =", data);
 
-    console.log("遷移先 =", data.page);
-    alert("遷移先 = " + data.page);
+    window.location.href = data.page;
 
   } catch (error) {
 
