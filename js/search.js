@@ -1,3 +1,5 @@
+console.log("SEARCH.JS LOADED");
+
 function normalizeText(str) {
   return str
     .trim()
