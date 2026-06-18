@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>採用情報｜株式会社Deus</title>
+<meta name="description" content="株式会社Deusの採用情報ページ。新卒・中途採用、募集要項、選考プロセスをご案内します。">
+
+<style>
+body {
+  margin: 0;
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  margin-top: 5px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.search-box button {
+  padding: 6px 10px;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+}
+
+.search-box button:hover {
+  background-color: #666;
+}
+
+.section {
+  padding: 60px 10%;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  border-left: 4px solid #2c3e50;
+  padding-left: 10px;
+}
+
+.section h4 {
+  margin-top: 30px;
+  color: #2c3e50;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+}
+
+table th {
+  background-color: #f0f2f5;
+  text-align: left;
+}
+
+footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.main {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: #1b024fcf;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background-color: #a294b7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>株式会社Deus</h1>
+    <nav>
+      <a href="index.html">ホーム</a>
+      <a href="company.html">会社概要</a>
+      <a href="service.html">事業紹介</a>
+      <a href="recruit.html">採用情報</a>
+    </nav>
+  </div>
+
+  <!-- 🔎 検索フォーム -->
+  <form class="search-box" onsubmit="search(); return false;">
+    <input type="text" id="keyword" placeholder="検索ワードを入力">
+    <button type="submit">検索</button>
+  </form>
+</header>
+
+<section class="section">
+  <h3>お問い合わせ</h3>
+  <p>
+    株式会社Deusでは、事業内容に関するご質問、ご相談、ご意見を随時受け付けております。<br>
+    当社サービスに関するご不明点がございましたら、お気軽にお問い合わせください。
+  </p>
+
+  <p>
+    お寄せいただいたお問い合わせには、担当部署にて内容を確認のうえ、順次ご返信いたします。
+    なお、回答までお時間をいただく場合がございますので、あらかじめご了承ください。
+  </p>
+
+  <p>
+    また、<b>「当社所属の人員」に対するご質問</b>も多くいただく機会がございます。
+  </p>
+
+  <p>
+    しかしながら、プライバシー保護の観点から、そういったご質問にお答えすることはありません。ご理解のほどよろしくお願いいたします。
+  </p>
+
+  <p>
+    また、当社施設をご利用中の方の個人情報、利用状況、現在地等に関するお問い合わせには、一切お答えできません。<br>
+    皆様のご理解とご協力に、心より感謝申し上げます。
+  </p>
+</section>
+
+<section class="main">
+  <h2>■ お問い合わせボタン</h2>
+  <button class="button" onclick="tweet()">問い合わせる</button>
+</section>
+
+<footer>
+  © 2026 下種のカラクリ All Rights Reserved.<br>
+  このサイトはフィクションです。実在の企業・団体・とは一切関係ありません。
+</footer>
+
+<script src="js/search.js"></script>
+
+<script>
+function tweet() {
+  const text = encodeURIComponent("失踪した恋人の行方を捜索中…… #彼女の遺したパソコン");
+  const url = encodeURIComponent(location.href);
+
+  window.open(
+    `https://twitter.com/intent/tweet?text=${text}&url=${url}`,
+    "_blank"
+  );
+}
+</script>
+
+</body>
+</html>
