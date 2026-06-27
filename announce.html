@@ -2,20 +2,28 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>株式会社Deus｜都市再生と資産価値の創造</title>
 <meta name="description" content="株式会社Deusは都市再生・高級分譲開発・資産運用コンサルティングを行う不動産会社です。">
 
 <style>
-body {
+html, body {
+  height: 100%;
   margin: 0;
+}
+
+body {
   font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
-  background-color: #000000;
-  color: #c16d00;
+  background-color: #f4f6f8;
+  color: #333;
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh;
 }
 
 header {
-  background-color: #2b0006;
-  color: #ffffff;
+  background-color: #111;
+  color: #fff;
   padding: 20px 10%;
   display: flex;
   justify-content: space-between;
@@ -25,10 +33,6 @@ header {
 header h1 {
   margin: 0;
   font-size: 24px;
-}
-
-.container {
-  padding: 60px 10%;
 }
 
 nav {
@@ -44,52 +48,6 @@ nav a {
 
 nav a:hover {
   color: #fff;
-}
-
-.folder-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 40px;
-}
-
-.folder {
-  text-align: center;
-  cursor: pointer;
-}
-
-.folder img {
-  width: 80px;
-  opacity: 0.85;
-}
-
-.folder:hover img {
-  opacity: 1;
-}
-
-.folder-name {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-.file-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 40px;
-}
-
-.file {
-  text-align: center;
-  cursor: pointer;
-}
-
-.file img {
-  width: 80px;
-  opacity: 0.85;
-}
-
-.file-name {
-  margin-top: 10px;
-  font-size: 14px;
 }
 
 .search-box {
@@ -117,15 +75,54 @@ nav a:hover {
   background-color: #666;
 }
 
-.section h3 {
-  border-left: 4px solid #000000;
-  padding-left: 10px;
+.container {
+  padding: 60px 10%;
+  flex: 1; 
+  box-sizing: border-box;
 }
 
-.hero {
-  background-color: #000000;
-  color: #c16d00;
-  padding: 10px 10%;
+.notice-box {
+  background-color: #fff;
+  border: 1px solid #dcdfe6;
+  border-top: 4px solid #c0392b; 
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.05);
+}
+
+.notice-date {
+  text-align: right;
+  font-size: 14px;
+  color: #606266;
+  margin-bottom: 20px;
+}
+
+.notice-box h2 {
+  font-size: 22px;
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eaeefb;
+  padding-bottom: 15px;
+}
+
+.notice-content {
+  font-size: 15px;
+  line-height: 2.0;
+  color: #303133;
+}
+
+.notice-content p {
+  margin: 0 0 20px 0;
+}
+
+.notice-footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px dashed #eaeefb;
+  text-align: right;
+  font-size: 14px;
+  color: #606266;
 }
 
 footer {
@@ -134,10 +131,11 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: auto; 
 }
 </style>
-
-<script src="js/auth.js"></script>
 </head>
 
 <body>
@@ -146,7 +144,7 @@ footer {
   <div>
     <h1>株式会社Deus</h1>
     <nav>
-     <a href="index.html">ホーム</a>
+      <a href="index.html">ホーム</a>
       <a href="company.html">会社概要</a>
       <a href="service.html">事業紹介</a>
       <a href="recruit.html">採用情報</a>
@@ -159,19 +157,23 @@ footer {
   </form>
 </header>
 
-<section class="hero">
-  <h2>林原</h2>
-</section>
-
 <div class="container">
-  <div class="folder-grid">
-
-    <div class="folder deleted" onclick="openPDF('pdf/2026_financial_report.pdf')">
-      <img src="images/pdf.png">
-      <div class="folder-name"> 2026年度会計報告書.pdf</div>
+  <article class="notice-box">
+    <div class="notice-date">2026年6月23日</div>
+    
+    <h2>IR資料の一時公開停止に関するお知らせ</h2>
+    
+    <div class="notice-content">
+      <p>現在、過去に公開された一部資料について記載内容の整合性確認を実施しております。</p>
+      <p>関係各所との協議が完了するまで、該当資料の閲覧を停止いたします。</p>
+      <p>なお、本件に関する個別のお問い合わせには回答いたしかねます。</p>
     </div>
-
-  </div>
+    
+    <div class="notice-footer">
+      以上<br>
+      株式会社Deus 財務IR部
+    </div>
+  </article>
 </div>
 
 <footer>
@@ -182,6 +184,4 @@ footer {
 <script src="js/search.js"></script>
 
 </body>
-
-
 </html>

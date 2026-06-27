@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>株式会社Deus｜都市再生と資産価値の創造</title>
 <meta name="description" content="株式会社Deusは都市再生・高級分譲開発・資産運用コンサルティングを行う不動産会社です。">
 
@@ -27,10 +28,6 @@ header h1 {
   font-size: 24px;
 }
 
-.container {
-  padding: 60px 10%;
-}
-
 nav {
   margin-top: 5px;
 }
@@ -44,52 +41,6 @@ nav a {
 
 nav a:hover {
   color: #fff;
-}
-
-.folder-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 40px;
-}
-
-.folder {
-  text-align: center;
-  cursor: pointer;
-}
-
-.folder img {
-  width: 80px;
-  opacity: 0.85;
-}
-
-.folder:hover img {
-  opacity: 1;
-}
-
-.folder-name {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-.file-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 40px;
-}
-
-.file {
-  text-align: center;
-  cursor: pointer;
-}
-
-.file img {
-  width: 80px;
-  opacity: 0.85;
-}
-
-.file-name {
-  margin-top: 10px;
-  font-size: 14px;
 }
 
 .search-box {
@@ -117,15 +68,21 @@ nav a:hover {
   background-color: #666;
 }
 
-.section h3 {
-  border-left: 4px solid #000000;
-  padding-left: 10px;
-}
-
 .hero {
   background-color: #000000;
   color: #c16d00;
-  padding: 10px 10%;
+  padding: 80px 10%;
+}
+
+.section {
+  padding: 60px 10%;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  border-left: 4px solid #000000;
+  padding-left: 10px;
 }
 
 footer {
@@ -137,7 +94,6 @@ footer {
 }
 </style>
 
-<script src="js/auth.js"></script>
 </head>
 
 <body>
@@ -160,19 +116,17 @@ footer {
 </header>
 
 <section class="hero">
-  <h2>林原</h2>
+  <h2>社員チャットログ　2025/09/23</h2>
+  <p>ID:1845664＞新山さん、この間会計部に呼ばれてたんだけど、なんかあったんすか？</p>
+  <p>ID:1931487＞いや、なんか都市開発事業部の支出報告の数値桁数がミスってたって言われて怒られた</p>
+  <p>ID:1845664＞普通にヤバめのミスじゃないですか。マジのやらかしっすか？</p>
+  <p>ID:1931487＞いや、それがマジで心当たり無い。<b>7桁の支出
+    を8桁と間違える</b>なんて、普通無いだろ。確かめるわふつーに</p>
+  <p>ID:1845664＞7桁のはずだったのに、報告書では8桁に変わってたってことです？　何と言うか怖いっすね</p>
+  <p>ID:1931487＞ああ、俺ヤバいかも。明日死ぬかもしれないから飯奢って？</p>
+  <p>ID:1845664＞普通に嫌ですけども。</p>
 </section>
 
-<div class="container">
-  <div class="folder-grid">
-
-    <div class="folder deleted" onclick="openPDF('pdf/2026_financial_report.pdf')">
-      <img src="images/pdf.png">
-      <div class="folder-name"> 2026年度会計報告書.pdf</div>
-    </div>
-
-  </div>
-</div>
 
 <footer>
   © 2026 下種のカラクリ All Rights Reserved.<br>
@@ -182,6 +136,5 @@ footer {
 <script src="js/search.js"></script>
 
 </body>
-
-
 </html>
+

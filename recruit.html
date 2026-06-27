@@ -88,17 +88,19 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  margin-bottom: 40px; 
 }
 
 table th, table td {
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 12px 15px; 
   font-size: 14px;
 }
 
 table th {
   background-color: #f0f2f5;
   text-align: left;
+  width: 25%; 
 }
 
 footer {
@@ -108,6 +110,50 @@ footer {
   padding: 20px;
   font-size: 12px;
 }
+
+.process-intro {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.process-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.process-list li {
+  position: relative;
+  background-color: #fcfdfe;
+  border: 1px solid #e0e6ed;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.process-list .step-num {
+  font-size: 11px;
+  font-weight: bold;
+  color: #2c3e50;
+  background-color: #f0f2f5;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+
+.process-list h4 {
+  margin: 10px 0 5px 0 !important;
+  font-size: 16px;
+}
+
+.process-list p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
 </style>
 </head>
 
@@ -124,7 +170,6 @@ footer {
     </nav>
   </div>
 
-  <!-- 🔎 検索フォーム -->
   <form class="search-box" onsubmit="search(); return false;">
     <input type="text" id="keyword" placeholder="検索ワードを入力">
     <button type="submit">検索</button>
@@ -153,8 +198,20 @@ footer {
       <td>四年制大学卒業以上（学部不問）</td>
     </tr>
     <tr>
+      <th>給与・初任給</th>
+      <td>大卒初任給：月給 280,000円（一律手当含む）<br>※経験・能力を考慮の上、当社規定により決定します。</td>
+    </tr>
+    <tr>
+      <th>勤務時間</th>
+      <td>9:00 ～ 18:00（実働8時間 / 休憩1時間）</td>
+    </tr>
+    <tr>
       <th>勤務地</th>
       <td>東京都内本社（非公開フロア含む）</td>
+    </tr>
+    <tr>
+      <th>休日・休暇</th>
+      <td>完全週休2日制（土日）、祝日、年末年始休暇、有給休暇、慶弔休暇</td>
     </tr>
   </table>
 
@@ -166,25 +223,56 @@ footer {
     </tr>
     <tr>
       <th>応募資格</th>
-      <td>不動産業界経験者優遇</td>
+      <td>不動産業界・金融業界での営業経験者優遇</td>
+    </tr>
+    <tr>
+      <th>給与・待遇</th>
+      <td>月給 350,000円 ～ 500,000円 ＋ インセンティブ（業績連動型）<br>※前職の給与・経験を考慮いたします。</td>
+    </tr>
+    <tr>
+      <th>勤務時間</th>
+      <td>10:00 ～ 19:00（実働8時間 / 休憩1時間、専門業務型裁量労働制あり）</td>
     </tr>
     <tr>
       <th>勤務地</th>
-      <td>東京・大阪</td>
+      <td>東京本社 または 大阪支社</td>
+    </tr>
+    <tr>
+      <th>休日・休暇</th>
+      <td>完全週休2日制（水・日 または 土・日 ※配属による）、祝日、夏季・冬季休暇</td>
     </tr>
   </table>
 </section>
 
 <section class="section">
   <h3>選考プロセス</h3>
-  <ol>
-    <li>エントリー</li>
-    <li>書類選考</li>
-    <li>一次面接</li>
-    <li>最終面接</li>
-    <li>内定</li>
-  </ol>
+  <p class="process-intro">
+    ご応募から内定までは、約3週間〜1ヶ月程度を予定しております。<br>
+    人物重視の選考を行いますので、あなたのこれまでの経験や、今後のビジョンをぜひお聞かせください。
+  </p>
 
+  <ol class="process-list">
+    <li>
+      <span class="step-num">STEP 01</span>
+      <h4>エントリー・書類選考</h4>
+      <p>マイナビ・リクナビ等の各求人媒体、または当社採用窓口よりエントリーしてください。ご提出いただいた職務経歴書・履歴書をもとに選考を行います。（結果通知：約1週間以内）</p>
+    </li>
+    <li>
+      <span class="step-num">STEP 02</span>
+      <h4>適性検査（WEB）・一次面接</h4>
+      <p>人事担当者および配属予定部署のマネージャーによるオンライン面接（約30〜45分）を実施します。あわせて、ご自宅等で受検可能なWEB適性検査をご案内いたします。</p>
+    </li>
+    <li>
+      <span class="step-num">STEP 03</span>
+      <h4>最終面接</h4>
+      <p>本社（東京）にて、役員・経営陣による対面での最終面接を行います。これまでの実績や、当社でどのように活躍・成長していきたいか、熱意をお聞かせください。</p>
+    </li>
+    <li>
+      <span class="step-num">STEP 04</span>
+      <h4>内定・オファー面談</h4>
+      <p>最終面接通過後、内定通知書をお送りいたします。その後、条件面や入社時期の調整、キャリアプランのすり合わせを行うためのオファー面談（対面またはオンライン）を実施します。</p>
+    </li>
+  </ol>
 </section>
 
 <section class="section">
@@ -200,7 +288,7 @@ footer {
 
 <footer>
   © 2026 下種のカラクリ All Rights Reserved.<br>
-  このサイトはフィクションです。実在の企業・団体・とは一切関係ありません。
+  このサイトはフィクションです。実在の企業・団体・人物とは一切関係ありません。
 </footer>
 
 <script src="js/search.js"></script>
